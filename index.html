@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <link rel="stylesheet" href="estilo.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dolars</title>
+</head>
+<body>
+    <img src="my-dolar.gif" alt="Foto Dolar">
+    <h1>My Dolars</h1>
+
+    <div>
+        <input id="real" type="number" placeholder="Valor em Reais">
+        <input id="dolar" placeholder="Valor do Dólar"">
+        <p id="dolares">$</p>
+
+        <button onclick="calcularDolar()">Converter</button>
+    </div>
+</body>
+
+    <script>
+
+        function cacularDolar(){
+        let real = document.getElementById("real").value
+        let dolar = document.getElementById("dolar").value
+        let resultado = real / dolar
+
+        dolares.innerHTML = '$ ' + resultado
+
+        alert('O resultado é $'+ resultado + 'dólares')
+    }
+
+
+    </script>
+</html>
